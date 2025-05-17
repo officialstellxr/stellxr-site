@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stellxr — Launching Soon</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  main {
+    max-width: 600px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #555;
+    margin: 0 0 3rem 0;
+    line-height: 1.4;
+  }
+
+  .star-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  svg.star {
+    width: 80px;
+    height: 80px;
+    fill: black;
+    animation: rotate 4s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>This is Stellxr.</h1>
+    <p>You're slightly ahead of schedule. Our universe is still aligning.<br />Check back soon for something truly stellar.</p>
+    <div class="star-container" aria-label="Loading animation">
+      <svg class="star" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" >
+        <!-- Proper 4-point star -->
+        <polygon points="
+          50,10
+          60,40
+          90,50
+          60,60
+          50,90
+          40,60
+          10,50
+          40,40
+        "/>
+      </svg>
+    </div>
+  </main>
+</body>
+</html>
